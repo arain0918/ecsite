@@ -52,7 +52,7 @@ public class IndexController {
 	public String loginApi(@RequestBody LoginForm form) {
 		List<User> users = userRepos.findByUserNameAndPassword(form.getUserName(), form.getPassword());
 		
-		LoginDto dto = new LoginDto(0, null, null, "ã‚²ã‚¹ãƒˆ");
+		LoginDto dto = new LoginDto(0, null, null, "ƒQƒXƒg");
 		if(users.size() > 0) {
 			dto = new LoginDto(users.get(0));
 		}

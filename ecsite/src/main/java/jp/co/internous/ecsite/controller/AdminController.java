@@ -18,8 +18,7 @@ import jp.co.internous.ecsite.model.form.GoodsForm;
 import jp.co.internous.ecsite.model.form.LoginForm;
 
 
-/*localhost:8080/ecsite/admin/のURLでアクセスできるように設定している。
- */
+
 @Controller
 @RequestMapping("/ecsite/admin")
 public class AdminController {
@@ -30,7 +29,7 @@ public class AdminController {
 	@Autowired
 	private GoodsRepository goodsRepos;
 	
-/*adminindex.htmlに遷移するメソッドです。	
+/*adminindex.html�ɑJ�ڂ��郁�\�b�h�ł��B	
  */
 	@RequestMapping("/")
 	public String index() {
